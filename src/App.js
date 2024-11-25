@@ -4,12 +4,13 @@ import {
   Linkedin, MapPin, Mail, Phone, Briefcase
 } from 'lucide-react';
 
-const PROFILE_IMAGE = '/pic.jpeg';
+const PROFILE_IMAGE = process.env.PUBLIC_URL + '/pic.jpeg';
 const PROJECT_IMAGES = [
-  '/project.jpeg',
-  '/projet2.jpg',
-  '/projet2.jpg'
+  process.env.PUBLIC_URL + '/project.jpeg',
+  process.env.PUBLIC_URL + '/project.jpeg',
+  process.env.PUBLIC_URL + '/test.png'
 ];
+
 
 
 const NavigationMenu = ({ activeSection, setActiveSection }) => {
