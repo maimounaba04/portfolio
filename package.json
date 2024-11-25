@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "name": "my-protfolio",
+  "homepage": "https://MedouLoq.github.io/My-protfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +12,7 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "tailwindcss": "^3.4.15",
-    "web-vitals": "^2.1.4" 
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.2.0"
   }
 }
