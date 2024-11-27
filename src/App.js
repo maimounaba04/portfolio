@@ -587,7 +587,7 @@ const AchievementsPage = () => {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-white min-h-screen py-12 px-6">
       <h2 className="text-4xl font-bold text-blue-900 text-center mb-12">
-        Achievements Timeline
+        Achievements
       </h2>
 
       {/* Timeline Container */}
