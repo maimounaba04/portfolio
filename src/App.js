@@ -253,17 +253,17 @@ const AboutPage = () => {
       icon: GraduationCap,
     },
     {
+      title: "Internship at SISTA",
+      date: "2024",
+      description: "Worked on real-world data analysis problems.",
+      icon: Briefcase,
+    },
+    {
       title: "Professional Bachelor Degree in Statistics",
       date: "2021 - 2024",
       description: "Graduated top of my class.",
       icon: Book,
-    },
-    {
-      title: "Internship at SISTA",
-      date: "2023",
-      description: "Worked on real-world data analysis problems.",
-      icon: Briefcase,
-    },
+    }
   ];
 
   const stats = [
