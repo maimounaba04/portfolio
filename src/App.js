@@ -637,7 +637,7 @@ const BlogPage = () => {
       excerpt: "Exploring real-world applications of machine learning.",
       tags: ["Data Science", "Machine Learning"],
       readTime: "5 min",
-      image: "/images/datascience.jpg",
+      image: process.env.PUBLIC_URL + "/images/datascience.jpg",
       content:
         "In this post, we explore practical use cases of machine learning in industries like healthcare, finance, and retail. Learn how data scientists solve real-world problems.",
     },
@@ -646,17 +646,22 @@ const BlogPage = () => {
       excerpt: "How to tell compelling stories with your data.",
       tags: ["Data Visualization", "Analytics"],
       readTime: "7 min",
-      image: "/images/datavisualization.jpg",
+      image: process.env.PUBLIC_URL + "/images/datavisualization.jpg",
       content:
         "Visualization is a critical part of analytics. Discover tools and techniques to create compelling data narratives that drive decision-making.",
     },
   ];
 
   const galleryImages = [
-    { src: "/images/event1.jpg", alt: "Event 1" },
-    { src: "/images/event2.jpg", alt: "Event 2" },
-    { src: "/images/event3.jpg", alt: "Event 3" },
-    { src: "/images/event4.jpg", alt: "Event 4" },
+    { src: process.env.PUBLIC_URL + "/1.jpg", alt: "Slide 1" },
+    { src: process.env.PUBLIC_URL + "/2.jpg", alt: "Slide 2" },
+    { src: process.env.PUBLIC_URL + "/3.jpg", alt: "Slide 3" },
+    { src: process.env.PUBLIC_URL + "/4.jpg", alt: "Slide 4" },
+    { src: process.env.PUBLIC_URL + "/5.jpg", alt: "Slide 5" },
+    { src: process.env.PUBLIC_URL + "/6.jpg", alt: "Slide 6" },
+    { src: process.env.PUBLIC_URL + "/7.jpg", alt: "Slide 7" },
+    { src: process.env.PUBLIC_URL + "/8.jpg", alt: "Slide 8" },
+    { src: process.env.PUBLIC_URL + "/9.jpg", alt: "Slide 9" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -689,12 +694,12 @@ const BlogPage = () => {
       </h2>
 
       {/* Event Gallery Section */}
-      <div className="relative max-w-4xl mx-auto mb-12">
+      <div className="relative max-w-6xl mx-auto mb-12">
         <div className="relative overflow-hidden rounded-lg shadow-lg">
           <img
             src={galleryImages[currentSlide].src}
             alt={galleryImages[currentSlide].alt}
-            className="w-full h-64 object-cover"
+            className="w-full h-[500px] object-contain"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
           <p className="absolute bottom-4 left-4 text-white text-lg font-semibold">
@@ -714,6 +719,7 @@ const BlogPage = () => {
           <ChevronRight size={24} />
         </button>
       </div>
+
 
       {/* Blog Posts Section */}
       <div className="grid gap-8 md:grid-cols-2">
@@ -751,7 +757,7 @@ const BlogPage = () => {
       </div>
     </div>
   );
-};  
+}; 
 
 const SkillsQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
